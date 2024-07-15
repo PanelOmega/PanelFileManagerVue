@@ -154,9 +154,7 @@ export default {
 <style lang="scss">
 .fm-info-block {
     flex: 0 0 auto;
-    padding-top: 0.2rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid #6c757d;
+    padding: 15px;
 
     .progress {
         margin-top: 0.3rem;

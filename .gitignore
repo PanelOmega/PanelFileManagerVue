@@ -1,2 +1,10 @@
 
 /node_modules
+.idea/vcs.xml
+.idea/php.xml
+.idea/PanelFileManagerVue.iml
+.idea/modules.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/copilot/chatSessions/xd.lck
+.idea/copilot/chatSessions/blobs/version
+.idea/copilot/chatSessions/00000000000.xd

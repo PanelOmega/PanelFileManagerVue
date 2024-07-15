@@ -1,4 +1,65 @@
+<style type="text/css">
+.st0{fill:#25242E;}
+.st1{fill:#E16449;}
+.st2{fill:#EFBBB0;}
+.st3{fill:#FFFFFF;}
+</style>
+<style lang="scss">
+.btn {
+  font-size: 13px;
+}
+.btn-secondary {
+  background-color: #eaeaea;
+  color: #25242E;
+  border-color: #c1c6cb;
+}
+.btn-secondary:hover {
+  background-color: rgba(37, 36, 46, 0.89);
+  border-color: #25242E;
+  color: #fff;
+}
+.btn-secondary.active {
+  background-color: rgba(37, 36, 46, 0.89);
+  border-color: #25242E;
+  color: #fff;
+}
+.btn-secondary:disabled {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border-color: #c1c6cb;
+}
+.fm-logo {
+  background-color: #25242E;
+  color: #fff;
+  padding: 10px 15px;
+}
+.fm-logo-image {
+  width: 40px;
+}
+.fm-logo-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.fm-navbar {
+  flex: 0 0 auto;
+  padding: 15px;
+  background: #eaeaea;
+  border-bottom: 1px solid #c1c6cb;
+  .col-auto > .btn-group:not(:last-child) {
+    margin-right: 0.4rem;
+  }
+}
+</style>
+
 <template>
+    <div class="fm-logo">
+      <div class="d-flex gap-2 align-items-center">
+        <img src="logo.svg" class="fm-logo-image" />
+        <span class="fm-logo-text">
+          File Manager
+        </span>
+      </div>
+    </div>
     <div class="fm-navbar mb-3">
         <div class="row justify-content-between">
             <div class="col-auto">
@@ -11,6 +72,7 @@
                         v-on:click="historyBack()"
                     >
                         <i class="bi bi-skip-backward-fill" />
+                        Back
                     </button>
                     <button
                         type="button"
@@ -20,6 +82,7 @@
                         v-on:click="historyForward()"
                     >
                         <i class="bi bi-skip-forward-fill" />
+                        Forward
                     </button>
                     <button
                         type="button"
@@ -28,6 +91,7 @@
                         v-bind:title="lang.btn.refresh"
                     >
                         <i class="bi bi-arrow-repeat"></i>
+                      Refresh
                     </button>
                 </div>
                 <div class="btn-group" role="group">
@@ -38,6 +102,7 @@
                         v-bind:title="lang.btn.file"
                     >
                         <i class="bi bi-file-earmark"></i>
+                      New File
                     </button>
                     <button
                         type="button"
@@ -46,6 +111,7 @@
                         v-bind:title="lang.btn.folder"
                     >
                         <i class="bi bi-folder"></i>
+                        New Folder
                     </button>
                     <button
                         type="button"
@@ -55,6 +121,7 @@
                         v-bind:title="lang.btn.upload"
                     >
                         <i class="bi bi-upload"></i>
+                        Uploading...
                     </button>
                     <button
                         type="button"
@@ -64,6 +131,7 @@
                         v-bind:title="lang.btn.upload"
                     >
                         <i class="bi bi-upload"></i>
+                        Upload
                     </button>
                     <button
                         type="button"
@@ -73,6 +141,7 @@
                         v-bind:title="lang.btn.delete"
                     >
                         <i class="bi bi-trash"></i>
+                        Delete
                     </button>
                 </div>
                 <div class="btn-group" role="group">
@@ -84,6 +153,7 @@
                         v-on:click="toClipboard('copy')"
                     >
                         <i class="bi bi-files"></i>
+                        Copy
                     </button>
                     <button
                         type="button"
@@ -93,6 +163,7 @@
                         v-on:click="toClipboard('cut')"
                     >
                         <i class="bi bi-scissors"></i>
+                        Cut
                     </button>
                     <button
                         type="button"
@@ -102,6 +173,7 @@
                         v-on:click="paste"
                     >
                         <i class="bi bi-clipboard"></i>
+                        Paste
                     </button>
                 </div>
                 <div class="btn-group" role="group">
@@ -145,16 +217,6 @@
                         v-on:click="screenToggle"
                     >
                         <i class="bi bi-arrows-fullscreen"></i>
-                    </button>
-                </div>
-                <div class="btn-group" role="group">
-                    <button
-                        type="button"
-                        class="btn btn-secondary"
-                        v-bind:title="lang.btn.about"
-                        v-on:click="showModal('AboutModal')"
-                    >
-                        <i class="bi bi-question-lg"></i>
                     </button>
                 </div>
             </div>
@@ -356,13 +418,3 @@ export default {
     },
 };
 </script>
-
-<style lang="scss">
-.fm-navbar {
-    flex: 0 0 auto;
-
-    .col-auto > .btn-group:not(:last-child) {
-        margin-right: 0.4rem;
-    }
-}
-</style>

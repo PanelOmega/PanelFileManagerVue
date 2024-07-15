@@ -244,7 +244,6 @@ export default {
 .fm {
     position: relative;
     height: 100%;
-    padding: 1rem;
     background-color: white;
 
     &:-moz-full-screen {
@@ -265,8 +264,6 @@ export default {
         position: relative;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        border-top: 1px solid #6c757d;
-        border-bottom: 1px solid #6c757d;
     }
 
     .unselectable {
