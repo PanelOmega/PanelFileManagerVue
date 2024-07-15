@@ -1,9 +1,3 @@
-<style type="text/css">
-.st0{fill:#25242E;}
-.st1{fill:#E16449;}
-.st2{fill:#EFBBB0;}
-.st3{fill:#FFFFFF;}
-</style>
 <style lang="scss">
 .btn {
   font-size: 13px;
@@ -54,7 +48,7 @@
 <template>
     <div class="fm-logo">
       <div class="d-flex gap-2 align-items-center">
-        <img src="logo.svg" class="fm-logo-image" />
+        <img src="../../assets/logo.svg" class="fm-logo-image" />
         <span class="fm-logo-text">
           File Manager
         </span>
