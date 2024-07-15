@@ -45,10 +45,14 @@
 }
 </style>
 
+<script setup>
+const logoUrl = 'logo.svg';
+</script>
+
 <template>
     <div class="fm-logo">
       <div class="d-flex gap-2 align-items-center">
-        <img src="../../assets/logo.svg" class="fm-logo-image" />
+        <img class="fm-logo-image" :src="logoUrl" alt="Logo" />
         <span class="fm-logo-text">
           File Manager
         </span>
