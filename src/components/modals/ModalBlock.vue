@@ -82,7 +82,6 @@ export default {
 
 <style lang="scss">
 .modal-content {
-  border-radius: 14px !important;
   border-color: transparent !important;
 }
 .fm-modal {

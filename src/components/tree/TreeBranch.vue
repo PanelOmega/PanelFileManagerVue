@@ -99,13 +99,16 @@ export default {
 
     li > p {
         margin-bottom: 0;
-        padding: 0.4rem 0.4rem;
         white-space: nowrap;
         cursor: pointer;
 
+        padding: .2rem .7rem;
+        margin-top: 5px;
+
         &:hover,
         &.selected {
-            background-color: #f8f9fa;
+          background-color: #eaeaea;
+          border-radius: 13px;
         }
     }
 

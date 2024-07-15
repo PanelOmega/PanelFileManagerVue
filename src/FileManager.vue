@@ -309,4 +309,12 @@ export default {
 .bg-secondary {
   background-color: #25242e;
 }
+.btn-info {
+  background: #25242e;
+  color: #fff;
+  border-color: transparent;
+}
+.btn-light {
+  border-color: transparent;
+}
 </style>

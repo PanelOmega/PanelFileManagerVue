@@ -155,6 +155,7 @@ export default {
 .fm-info-block {
     flex: 0 0 auto;
     padding: 15px;
+    font-size: 13px;
 
     .progress {
         margin-top: 0.3rem;
