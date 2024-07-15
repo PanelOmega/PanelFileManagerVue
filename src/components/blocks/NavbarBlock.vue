@@ -60,7 +60,7 @@
         </span>
       </div>
     </div>
-    <div class="fm-navbar mb-3">
+    <div class="fm-navbar">
         <div class="row justify-content-between">
             <div class="col-auto">
                 <div class="btn-group" role="group">

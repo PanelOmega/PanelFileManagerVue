@@ -81,6 +81,10 @@ export default {
 </script>
 
 <style lang="scss">
+.modal-content {
+  border-radius: 14px !important;
+  border-color: transparent !important;
+}
 .fm-modal {
     position: absolute;
     z-index: 9998;
@@ -90,7 +94,8 @@ export default {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.66);
+    backdrop-filter: blur(1px);
     display: block;
     transition: opacity 0.4s ease;
     overflow: auto;
