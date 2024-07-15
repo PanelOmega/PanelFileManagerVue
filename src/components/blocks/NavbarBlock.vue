@@ -46,7 +46,7 @@
 </style>
 
 <script setup>
-const logoUrl = 'logo.svg';
+const logoUrl = '/file-manager/logo.svg';
 </script>
 
 <template>
