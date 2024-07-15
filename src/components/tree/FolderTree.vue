@@ -28,7 +28,8 @@ export default {
 <style lang="scss">
 .fm-tree {
     overflow: auto;
-    border-right: 1px solid #6c757d;
+    border-right: 1px solid #eaeaea;
+    padding-right: 5px;
 
     & > .fm-tree-branch {
         padding-left: 0;
@@ -36,7 +37,7 @@ export default {
 
     .fm-tree-disk {
         padding: 0.2rem 0.3rem;
-        background-color: #cff4fc;
+        background-color: #eaeaea;
     }
 
     .fm-tree-disk > i {

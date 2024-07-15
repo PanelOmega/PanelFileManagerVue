@@ -259,11 +259,11 @@ export default {
     }
 
     .fm-body {
+
         flex: 1 1 auto;
         overflow: hidden;
         position: relative;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 15px;
     }
 
     .unselectable {
