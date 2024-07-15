@@ -306,4 +306,7 @@ export default {
     height: 100%;
     padding-bottom: 0;
 }
+.bg-secondary {
+  background-color: #25242e;
+}
 </style>

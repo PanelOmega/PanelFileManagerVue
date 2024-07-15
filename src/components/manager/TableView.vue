@@ -1,3 +1,10 @@
+<style lang="scss">
+.table-info {
+  --bs-table-bg: #3a3a42;
+  --bs-table-border-color: #0000001c;
+  --bs-table-color: #fff;
+}
+</style>
 <template>
     <div class="fm-table">
         <table class="table table-sm">
@@ -163,3 +170,5 @@ export default {
     }
 }
 </style>
+<script setup>
+</script>
